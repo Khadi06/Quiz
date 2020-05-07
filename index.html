@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Quiz App</title>
+	
+</head>
+<body>
+	<div id="quizContainer" class="container">
+        <div class="title"> Quiz</div><br>
+        <div class="question-number">
+        <h3>Question <span class="question-num-value">1</span> of <span class= "total-question"></span>
+        </h3></div>
+
+        <div id="question" class="question"></div>
+         <div class="options">
+        <div id="0" class="option1" onclick="check(this)"></div>
+        <div id="1" class="option2" onclick="check(this)"></div>
+        <div id="2" class="option3" onclick="check(this)"></div>
+        <div id="3" class="option4" onclick="check(this)"></div>
+        </div>  
+       <button type="button" class="btn" onclick="next()" >Next</button>
+      <div class="answers-tracker"></div>
+    </div>
+    <div class="quiz-over">
+      <div class="box">
+     <h1>
+       Good attempt! <br>
+       You Got <span class="correct-answers"></span>  out of <span class="total-question2"></span> answers correct! <br>
+       That's <span class="percentage"></span>
+       try again.
+     </h1>
+     <button type="button"  onclick="tryAgain()" >Try Again</button>
+    </div>
+      </div>
+<script src="question.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
